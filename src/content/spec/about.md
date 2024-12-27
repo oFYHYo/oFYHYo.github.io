@@ -1,9 +1,9 @@
-# About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+### 关于我
 
-::github{repo="saicaca/fuwari"}
+HNU在读本科生，理论化学爱好者。
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+### 关于这个站点
+
+本站点是我大二时闲的没事搭的一个网站，大概会放一些自己自认为写的比较好的学习笔记或者课程小论文之类的文章吧。网站名字目前还没想好。
+
+本网站主要使用 astro 搭建，主体部分 Fock 了 [Fuwari](https://github.com/saicaca/fuwari)，网站托管在 Github Pages 上。
