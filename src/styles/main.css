@@ -1,5 +1,5 @@
 @tailwind components;
-@import "katex/dist/katex.min.css";
+@import "katex.min.css";
 
 @layer components {
     .card-base {
