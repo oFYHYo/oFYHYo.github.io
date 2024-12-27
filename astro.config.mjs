@@ -19,8 +19,17 @@ import { parseDirectiveNode } from "./src/plugins/remark-directive-rehype.js";
 import { remarkExcerpt } from "./src/plugins/remark-excerpt.js";
 import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 
+import markdownItKatex from 'markdown-it-katex';
+
+
 // https://astro.build/config
 export default defineConfig({
+    markdown: {
+    extendMarkdownIt: (md) => {
+      md.use(markdownItKatex);
+      return md;
+    },
+  },
   site: "https://ofyhyo.github.io",
   base: "/",
   trailingSlash: "always",
@@ -129,4 +138,4 @@ export default defineConfig({
       },
     },
   },
-});
+})
