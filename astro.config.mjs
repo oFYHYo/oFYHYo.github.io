@@ -66,6 +66,7 @@ export default defineConfig({
     }),
   ],
   markdown: {
+    gfm: false,
     remarkPlugins: [
       remarkMath,
       remarkReadingTime,
