@@ -1,6 +1,6 @@
 ---
 title: 真空球对称爱因斯坦方程的简单求解
-published: 20245-1-1
+published: 2025-01-01
 description: '大二上宇宙简史通识课的结课论文'
 image: ''
 tags: [物理]

@@ -1,6 +1,6 @@
 ---
 title: 非绝热混合量子-经典动力学简介
-published: 2025-1-1
+published: 2025-01-01
 description: '大一下结课论文'
 image: ''
 tags: [物理]
