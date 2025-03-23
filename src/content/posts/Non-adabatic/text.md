@@ -3,7 +3,7 @@ title: 非绝热混合量子-经典动力学简介
 published: 2025-01-01
 description: '大一下结课论文'
 image: ''
-tags: [物理]
+tags: [非绝热动力学,激发态]
 category: '物理'
 draft: false 
 lang: 'zh_CN'
