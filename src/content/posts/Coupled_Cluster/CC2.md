@@ -1,6 +1,6 @@
 ---
 title: Coupled Cluster理论学习笔记（2）：能量方程的推导
-published: 2025-09-091
+published: 2025-09-10
 description: ''
 image: ''
 tags: [电子结构]
