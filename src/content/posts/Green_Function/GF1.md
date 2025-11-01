@@ -48,7 +48,7 @@ $$
 
 $$
 \begin{equation}
-    \braket{\Phi_N}{\Phi_M} = 0
+    \braket{\Phi_N|\Phi_M} = 0
 \end{equation}
 $$
 
@@ -58,7 +58,7 @@ $$
 
 $$
 \begin{equation}
-    \braket{0}{0} = 1
+    \braket{0|0} = 1
 \end{equation}
 $$
 
@@ -78,7 +78,7 @@ $$
 
 $$
 \begin{equation}
-    \braket{x_1'x_2'\cdots x_N'}{x_1x_2\cdots x_N} = \sum_{P} c_P \prod_{i}\delta(x_i' - x_{P(i)})
+    \braket{x_1'x_2'\cdots x_N'|x_1x_2\cdots x_N} = \sum_{P} c_P \prod_{i}\delta(x_i' - x_{P(i)})
 \end{equation}
 $$
 
@@ -87,7 +87,7 @@ $$
 $$
 \begin{equation}
     \begin{aligned}
-        \braket{x_1'x_2'\cdots x_N'}{x_1x_2\cdots x_N} &= \sum_{P} (-1)^P \prod_{i}\delta(x_i' - x_{P(i)}) \\
+        \braket{x_1'x_2'\cdots x_N'|x_1x_2\cdots x_N} &= \sum_{P} (-1)^P \prod_{i}\delta(x_i' - x_{P(i)}) \\
         &=
         \begin{vmatrix}
             \delta(x_1'-x_1) & \delta(x_1'-x_2) & \cdots & \delta(x_1'-x_N) \\
@@ -154,7 +154,7 @@ $$
 $$
 \begin{equation}
     \begin{aligned}
-        \braket{x_1\cdots x_N}{y_1 \cdots y_N}
+        \braket{x_1\cdots x_N|y_1 \cdots y_N}
         &= \bra{x_1\cdots x_{N-1}}\psi(x_N)\ket{y_1\cdots y_N} \\
         &=
         \begin{vmatrix}
@@ -220,14 +220,14 @@ $$
 \begin{equation}
     \begin{aligned}
         \ket{x}
-        &= \sum \ket{n}\braket{n}{x}\\
-        &= \sum \braket{n}{x} a^\dagger_n \ket{0} \\
+        &= \sum \ket{n}\braket{n|x}\\
+        &= \sum \braket{n|x} a^\dagger_n \ket{0} \\
         &= \psi^\dagger(x)\ket{0}
     \end{aligned}
 \end{equation}
 $$
 
-定义$\braket{x}{n}=\varphi_n(x)$为离散基在坐标表象下的波函数，可得
+定义$\braket{x|n}=\varphi_n(x)$为离散基在坐标表象下的波函数，可得
 
 $$
 \begin{equation}
@@ -244,7 +244,7 @@ $$
 \begin{equation}
     \begin{aligned}
         \ket{n}
-        &= \int dx \ket{x}\braket{x}{n}\\
+        &= \int dx \ket{x}\braket{x|n}\\
         &= \int dx \varphi_n(x) \psi^\dagger(x) \ket{0} \\
         &= a^\dagger_n \ket{0}
     \end{aligned}
@@ -282,8 +282,8 @@ $$
 $$
 \begin{equation}
     \begin{aligned}
-        \braket{x_1\cdots x_N}{n_1\cdots n_N}
-        &=  \int dx_1' \cdots dx_N' \varphi_{n_1}(x_1')\cdots \varphi_{n_N}(x_N')  \braket{x_1\cdots x_N}{x_1'\cdots x_N'} \\
+        \braket{x_1\cdots x_N|n_1\cdots n_N}
+        &=  \int dx_1' \cdots dx_N' \varphi_{n_1}(x_1')\cdots \varphi_{n_N}(x_N')  \braket{x_1\cdots x_N|x_1'\cdots x_N'} \\
         &=  \int dx_1' \cdots dx_N' \varphi_{n_1}(x_1')\cdots \varphi_{n_N}(x_N')  \sum_{P} (-1)^P \prod_{i}\delta(x_i' - x_{P(i)}) \\
         &=
         \begin{vmatrix}
@@ -348,8 +348,8 @@ $$
         \hat{H}_0
         &= \sum_{n} \varepsilon_{n} \int dx dx' \varphi_n(x) \varphi^*_n(x') \psi^\dagger(x)\psi(x') \\
         &= \int dx dx' \bigg(\sum_{n} \varepsilon_{n} \varphi_n(x) \varphi^*_n(x')\bigg) \psi^\dagger(x)\psi(x') \\
-        &= \int dx dx' \bigg(\sum_{n} \braket{x}{n}\varepsilon_{n} \braket{n}{x}\bigg) \psi^\dagger(x)\psi(x') \\
-        &= \int dx dx' \bigg(\sum_{n} \braket{x}{n}\hat{h} \braket{n}{x'}\bigg) \psi^\dagger(x)\psi(x') \\
+        &= \int dx dx' \bigg(\sum_{n} \braket{x|n}\varepsilon_{n} \braket{n|x}\bigg) \psi^\dagger(x)\psi(x') \\
+        &= \int dx dx' \bigg(\sum_{n} \braket{x|n}\hat{h} \braket{n|x'}\bigg) \psi^\dagger(x)\psi(x') \\
         &= \int dx dx' \bra{x}\hat{h}\ket{x'} \psi^\dagger(x)\psi(x')
     \end{aligned}
 \end{equation}
